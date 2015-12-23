@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name=“viewport” content=“width=device-width; initial-scale=1.0”>
+    <title>机器人</title>
+    <link rel="stylesheet" href="css/robot.css"/>
+    <script type="text/javascript" src="js/robotBaseCondition.js"></script>
+</head>
+<body>
+    <div class="main">
+        <img class="main-yard-robot" id="robot" src="image/jqr.png" alt="机器人"/>
+        <div class="main-house" id="main-house">
+            <img class="main-house-wardrobe" id="wardrobe" src="image/yg.png" alt="衣柜"/>
+            <img class="main-house-basket" id="basket"  src="image/lz.png" alt="篮子"/>
+            <img class="main-house-washing-machine" id="washer" src="image/xyjkxwyw.png" alt="洗衣机"/>
+            <img class="main-house-master" id="master" src="image/zr.png" alt="主人"/>
+            <span class="main-house-door-left" id="leftDoor"></span>
+            <span class="main-house-door-right" id="rightDoor"></span>
+        </div>
+        <div class="main-sky">
+            <img class="main-sky-sun" id="sun" src="image/ty.gif" alt="太阳"/>
+        </div>
+        <div class="main-yard" id="main-yard">
+            <img class="main-yard-dustbin" id="dustbin" src="image/ljt.png" alt="垃圾桶"/>
+            <img class="main-yard-clothes-hanger"  id="hanger" src="image/lyj.png" alt="晾衣架"/>
+            <ul class="main-yard-clothes" id="main-yard-clothes">
+            </ul>
+        </div>
+        <div class="main-operation">
+            <h1 class="main-operation-title">
+                天气
+            </h1>
+            <div class="main-operation-selection">
+                <img src="image/tyan.png" id="sunny" align="middle" alt="天气按钮"/>
+                <img src="image/xytan.png" id="rain" align="middle" alt="天气按钮"/>
+                <img src="image/ytan.png" id="overcast" class="last" align="middle" alt="天气按钮"/>
+            </div>
+            <h1 class="main-operation-title">
+                操作
+            </h1>
+            <button class="main-operation-rubbish" id="rubbish">扔垃圾</button>
+            <button class="main-operation-clothes" id="clothes">换衣服</button>
+            <h1 class="main-operation-title">
+                操作记录
+            </h1>
+            <p class="main-operation-record" id="record"><!--操作记录--></p>
+        </div>
+        <div class="main-state">
+            <h1 class="main-operation-title">状态</h1>
+            <ul class="main-state-list">
+                <li class="main-state-list-index" id="robotState">
+                    <strong>机器人：</strong>散步
+                </li>
+                <li class="main-state-list-index" id="masterState">
+                    <strong>主人：</strong>休息
+                </li>
+                <li class="main-state-list-index" id="washerState">
+                    <strong>洗衣机：</strong>空闲且无衣服
+                </li>
+                <li class="main-state-list-index" id="basketState">
+                    <strong>篮子：</strong>有0件衣服
+                </li>
+                <li class="main-state-list-index" id="wardrobeState">
+                    <strong>衣柜：</strong>有3件衣服
+                </li>
+                <li class="main-state-list-index" id="clothesLineState">
+                    <strong>晾衣架：</strong>有0件衣服
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/robotMove.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

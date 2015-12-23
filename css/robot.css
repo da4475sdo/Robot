@@ -1,0 +1,372 @@
+.main{
+    width:532px;
+    height:410px;
+    background:url('../image/background.png');
+    background-size: 100%;
+    margin:auto;
+    position: absolute;
+    border: 1px solid #333333;
+    font-size: 0;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.main-yard-robot{
+    width:6%;
+    height:9%;
+}
+
+.main-house-wardrobe{
+    width: 10%;
+    height: 23%;
+    margin-left: 9%;
+    margin-top: 21%;
+}
+
+.main-house-basket{
+    width: 10%;
+    height: 23%;
+    margin-left:5%;
+}
+
+.main-house-washing-machine{
+    width: 10%;
+    height: 23%;
+    margin-left:5%;
+}
+
+.main-house-master{
+    width: 10%;
+    height: 23%;
+}
+
+.main-sky-sun{
+    width:22%;
+    height:39%;
+}
+
+.main-yard-dustbin{
+    width:6%;
+    height:15%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.main-yard-rubbish{
+    position:absolute;
+    width:5%;
+    height:10%;
+}
+
+.main-yard-clothes-hanger{
+    width:38%;
+    height:2%;
+}
+
+.main-house{
+    background:url('../image/house-background.png');
+    background-size: 100%;
+    width:50%;
+    height:35%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-house-door-left{
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:40%;
+}
+
+.main-house-door-right{
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width:40%;
+}
+
+.main-house-master{
+    position: absolute;
+    bottom: 1px;
+    right:8px;
+}
+
+.main-sky{
+    width:49.8%;
+    height:35%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #0099ff;
+}
+
+.main-sky-sun{
+    position: absolute;
+    top:0;
+    right:3%;
+}
+
+.main-yard{
+    width:100%;
+    height:65%;
+    position: relative;
+}
+
+.main-yard-robot{
+    position: absolute;
+    left:100px;
+    top:250px;
+    z-index:100;
+}
+
+.main-yard-clothes-hanger{
+    position: absolute;
+    right: 20%;
+    bottom: 37%;
+}
+
+.main-yard-clothes{
+    padding:0;
+    list-style: none;
+    position: absolute;
+    left: 42%;
+    bottom: 29%;
+    font-size: 0;
+    width:36%;
+    height:10%;
+}
+
+.main-yard-clothe{
+    margin-right:8%;
+    display: inline-block;
+    vertical-align: top;
+    width:10%;
+    height:100%;
+}
+
+.main-yard-clothe img{
+    width:100%;
+    height:100%;
+}
+
+.last{
+    margin: 0;
+}
+
+.main-operation{
+    height:100%;
+    width:30%;
+    top: -1px;
+    right:-30%;
+    position: absolute;
+    border: 1px solid #333333;
+    border-left: none;
+    background-color: gold;
+}
+
+.main-operation-title{
+    font-size: 19px;
+    color: #0099ff;
+    border-left:4px solid #0099ff;
+    padding-left:5px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.main-operation-selection{
+    width:90%;
+    height:8%;
+    margin:20px auto 0 auto;
+}
+
+.main-operation-selection img{
+    margin-right:12%;
+    width:25%;
+    height:100%;
+}
+
+.main-operation-selection .last{
+    margin: 0;
+}
+
+.main-operation-selection img:hover{
+    cursor: pointer;
+}
+
+.main-operation-rubbish{
+    font-size: 15px;
+    background-color: #ffffff;
+    color:#ff9933;
+    font-weight: bold;
+    border: 1px solid #ff9933;
+    border-radius:10%;
+    padding:5px 7px 5px 7px;
+    margin-left:10px;
+}
+
+.main-operation-clothes{
+    font-size: 15px;
+    background-color: #ffffff;
+    color:#0099ff;
+    font-weight: bold;
+    border: 1px solid #0099ff;
+    border-radius:10%;
+    padding:5px 7px 5px 7px;
+    margin-left:10px;
+}
+
+.main-operation-rubbish:hover{
+    cursor: pointer;
+}
+
+.main-operation-clothes:hover{
+    cursor: pointer;
+}
+
+
+.main-operation-record{
+    width:70%;
+    height:40%;
+    margin:auto;
+    border: 1px dashed #333333;
+    color: #0099ff;
+    font-size:10px;
+    line-height: 1.5em;
+    padding-left:2px;
+    overflow: auto;
+}
+
+.main-state{
+    height:100%;
+    width:30%;
+    top: -1px;
+    left:-30%;
+    position: absolute;
+    border: 1px solid #333333;
+    border-right: none;
+    background-color: gold;
+}
+
+.main-state-list{
+    list-style: none;
+    margin-left:10px;
+    padding:10px 0 0 0;
+}
+
+.main-state-list-index{
+    font-size:12px;
+    color:#333333;
+    margin-bottom: 15%;
+}
+
+/*移动设备横屏时显示样式*/
+@media screen and (max-device-width:800px) and (orientation:landscape){
+    .main{
+        width:600px;
+        height:450px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        background-size:contain;
+    }
+
+    .main-operation-title{
+        font-size: 20px;
+        color: #333333;
+        margin-top:10px;
+        margin-left:30px;
+    }
+
+    .main-operation-selection{
+        width:80%;
+        height:12%;
+        margin:auto;
+        border: 1px dashed #333333;
+    }
+
+    .main-operation-rubbish{
+        font-size:20px;
+    }
+
+    .main-operation-clothes{
+        font-size:20px;
+    }
+
+    .main-operation-record{
+        width:70%;
+        height:45%;
+        margin:auto;
+        border: 1px dashed #333333;
+        color: #333333;
+        font-size:17px;
+        line-height: 1.5em;
+        padding-left:2px;
+        overflow: auto;
+    }
+
+    .main-state-list-index{
+        font-size: 18px;
+    }
+}
+
+/*移动设备竖屏时显示样式*/
+@media only screen and (max-device-width:480px) and (orientation:portrait){
+    .main{
+        width:600px;
+        height:500px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+
+    .main-operation-title{
+        font-size: 20px;
+        color: #333333;
+        margin-top:10px;
+        margin-left:30px;
+    }
+
+    .main-operation-selection{
+        width:80%;
+        height:12%;
+        margin:auto;
+        border: 1px dashed #333333;
+    }
+
+    .main-operation-rubbish{
+        font-size:20px;
+    }
+
+    .main-operation-clothes{
+        font-size:20px;
+    }
+
+    .main-operation-record{
+        width:70%;
+        height:45%;
+        margin:auto;
+        border: 1px dashed #333333;
+        color: #333333;
+        font-size:17px;
+        line-height: 1.5em;
+        padding-left:2px;
+        overflow: auto;
+    }
+
+    .main-state-list-index{
+        font-size: 18px;
+    }
+}
+
